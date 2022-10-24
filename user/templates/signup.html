@@ -6,7 +6,7 @@
 <body>
   django sparta 프로젝트의 메인 페이지입니다!
   <h2>Log In</h2>
-  <form action = "{% url 'users:signup' %}"method="post">
+  <form action = "{% url 'user:signup' %}"method="post">
   {% csrf_token %}
   <input type="text" name="username">아이디</input></br>
   <input type="text" name="password">비밀번호</input></br>
